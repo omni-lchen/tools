@@ -15,7 +15,7 @@ public class JVMTool {
 
     }
 
-    void listAllJVMMBeans() {
+    public void listAllJVMMBeans() {
         MBeanServer server = ManagementFactory.getPlatformMBeanServer();
         Set<ObjectInstance> instances = server.queryMBeans(null, null);
         Iterator<ObjectInstance> iterator = instances.iterator();
